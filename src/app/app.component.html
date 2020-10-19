@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="landing-container">
+    <div class="bg-imgs">
+      <img [@move]="animationState1" (@move.done)="onEnd1()" src="../assets/imgs/1.png" [ngStyle]="{'z-index': 5}">
+      <img [@move]="animationState2" (@move.done)="onEnd2()" src="../assets/imgs/2.png" [ngStyle]="{'z-index': 4}">
+      <img [@move]="animationState1" (@move.done)="onEnd1()" src="../assets/imgs/3.png" [ngStyle]="{'z-index': 3}">
+      <img [@move]="animationState2" (@move.done)="onEnd2()" src="../assets/imgs/4.png" [ngStyle]="{'z-index': 2}">
+      <img [@move]="animationState1" (@move.done)="onEnd1()" src="../assets/imgs/5.png" [ngStyle]="{'z-index': 1}">
+      <img src="../assets/imgs/6.png" [ngStyle]="{'z-index': 0}">
+    </div>
+    <div class="title">
+      <h1 class="mat-display-4">Consistent UX development tool</h1>
+      <img src="../assets/imgs/wireframe.png">
+    </div>
+    <div class="bottom-strip">
+      <img src="../assets/imgs/inv_logo.png" alt="uni-logo">
+      <img src="../assets/imgs/cw-main.png" alt="uni-logo">
+    </div>
+  </div>
+</div>
