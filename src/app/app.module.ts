@@ -8,6 +8,7 @@ import {MatCardModule} from '@angular/material/card';
 import { NgModule } from '@angular/core';
 import { PlanViewComponent } from './plan-view/plan-view.component';
 import { ProblemSolutionViewComponent } from './problem-solution-view/problem-solution-view.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,11 @@ import { ProblemSolutionViewComponent } from './problem-solution-view/problem-so
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    ScrollingModule
   ],
-  providers: [],
+  providers: [
+    { provide: 'Window',  useValue: window }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

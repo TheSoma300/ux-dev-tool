@@ -1,16 +1,33 @@
 .container {
     overflow-x: hidden;
     background: #04295C;
-    .layout {
-        position: relative;
-        display: flex;
-        .stepper {
-            li {
-                color: white;
-                margin-bottom: 1rem;
-                cursor: pointer;
-            }
-        }
     
+    .stepper {
+        z-index: 100;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1rem;
+        .step {
+            padding: .5rem;
+            background: lightgray;
+            color: gray;
+            cursor: pointer;
+            transition: background-color .2s;
+            &:hover {
+                background-color: lightcyan;
+            }
+            &.active {
+                background: #06c;
+                color: white;
+            }
+            border: none;
+        }
+        &.sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
     }
 }
