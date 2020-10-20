@@ -1,0 +1,69 @@
+.prob-sol-container {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    h1 {
+        margin: 2rem;
+        font-size: 85px;
+        font-weight: 100;
+        z-index: 2;
+        color: white;
+        &.title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &.solution {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .texts {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        z-index: 10;
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            line-height: 32px;
+
+            font-size: 22px;
+            &.problem-desc, &.sol-desc {
+                z-index: 10;
+            }
+        }
+    }
+    section {
+        z-index: 0;
+        width: 100vw;
+        height: 90vh;
+        position: absolute;
+        top: 0;
+        .separator {
+            position: relative;
+            width: 200vw;
+            height: 200vh;
+            transform: rotateX(180deg);
+          }
+          
+          .separator::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0,102,204,1) 0%, rgba(4,41,92,1) 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%);
+          }
+
+          .separator::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0,102,204,1) 0%, rgba(103,205,1,1) 100%);
+            clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          }
+    }
+}
