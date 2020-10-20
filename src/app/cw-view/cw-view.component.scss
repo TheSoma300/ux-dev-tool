@@ -1,0 +1,12 @@
+.cw-container {
+    width: 82vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .card {
+        width: 25%;
+        height: 60%;
+    }
+}

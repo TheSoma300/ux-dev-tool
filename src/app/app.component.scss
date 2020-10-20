@@ -1,52 +1,16 @@
 .container {
     overflow-x: hidden;
-    .landing-container {
+    background: #04295C;
+    .layout {
+        position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        .bg-imgs {
-            img {
-                width: 110vw;
-                height: 100vh;
-                position: absolute;
-                top: 0;
-                left: -5vw;
+        .stepper {
+            li {
+                color: white;
+                margin-bottom: 1rem;
+                cursor: pointer;
             }
         }
-        .title {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            h1 {
-                z-index: 6;
-                margin-bottom: .5rem;
-            }
-            img {
-                z-index: 6;
-                width: 60vw;
-            }
-        }
-        .bottom-strip {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            z-index: 5;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            img {
-                padding: .75rem;
-                &:first-child {
-                    height: 3rem;
-                }
-                &:last-child {
-                    height: 8vh;
-                }
-            }
-        }
+    
     }
 }
