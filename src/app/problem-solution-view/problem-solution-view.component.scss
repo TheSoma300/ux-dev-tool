@@ -3,8 +3,8 @@
     position: relative;
     overflow: hidden;
     h1 {
-        margin: 2rem;
-        font-size: 85px;
+        margin: 1.25rem;
+        font-size: 75px;
         font-weight: 100;
         z-index: 2;
         color: white;
@@ -64,11 +64,12 @@
             }
             &.sol-desc:before {
                 float: left;
-                shape-outside: polygon(11% 24%, 89% 23%, 89% 75%, 30% 75%, 44% 100%, 0 100%, 0 0);
+                shape-outside: polygon(19% 89%, 37% 100%, 0 100%, 0 100%, 0 0, 9% 16%, 88% 16%, 88% 83%)
             }
             &.problem-desc:before {
                 float: right;
-                shape-outside: polygon(100% 0, 100% 100%, 100% 76%, 7% 72%, 7% 25%, 83% 23%, 75% 0)
+                shape-outside: polygon(100% 0, 100% 0, 100% 83%, 12% 83%, 12% 15%, 88% 15%, 84% 0, 100% 0);
+
             }
         }
     }
