@@ -1,14 +1,13 @@
 <div class="container" #container id="container">
   <app-landing-view></app-landing-view>
   <div class="stepper" id="stepper">
-    <div class="step"[class.active]="sec.selected" *ngFor="let sec of sections">{{ sec.displayName }}</div>
-    <!-- <ul>
-      <li [class.active]="sec.selected" *ngFor="let sec of sections">{{ sec.displayName }}</li>
-    </ul> -->
+    <span></span>
+    <div class="step"[class.active]="sec.id === activeSection.id" *ngFor="let sec of sections" (click)="scroll(sec)">{{ sec.displayName }}</div>
   </div>
   <div class="views">
-    <app-cw-view></app-cw-view>
-    <app-problem-solution-view></app-problem-solution-view>
-    <app-plan-view></app-plan-view>
+    <app-cw-view id="cw-view"></app-cw-view>
+    <app-problem-solution-view id="prob-sol-view"></app-problem-solution-view>
+    <app-plan-view id="plan-view"></app-plan-view>
+    <app-roadmap-view id="roadmap-view"></app-roadmap-view>
   </div>
 </div>

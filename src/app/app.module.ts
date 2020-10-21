@@ -10,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { PlanViewComponent } from './plan-view/plan-view.component';
 import { ProblemSolutionViewComponent } from './problem-solution-view/problem-solution-view.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { RoadmapViewComponent } from './roadmap-view/roadmap-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     LandingViewComponent,
     CwViewComponent,
     ProblemSolutionViewComponent,
-    PlanViewComponent
+    PlanViewComponent,
+    RoadmapViewComponent
   ],
   imports: [
     BrowserModule,
