@@ -1,0 +1,52 @@
+.plan-container {
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    h1 {
+        text-align: center;
+        color: white;
+        padding: 1rem;
+    }
+    .sections {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+        .bus-req, .des-dec, .dev-dec {
+            width: 26%;
+            background: #F8FAEB;
+            border-radius: .5rem;
+            box-shadow:
+                /* The top layer shadow */
+                0 -1px 1px rgba(0,0,0,0.15),
+                /* The second layer */
+                0 -10px 0 -5px #F8FAEB,
+                /* The second layer shadow */
+                0 -10px 1px -4px rgba(0,0,0,0.15),
+                /* The third layer */
+                0 -20px 0 -10px #F8FAEB,
+                /* The third layer shadow */
+                0 -20px 1px -9px rgba(0,0,0,0.15);
+                /* Padding for demo purposes */
+            padding: 0;
+            .cont {
+                width: 100%;
+                font-size: 22px;
+                -moz-box-shadow:    inset 0 0 10px #000000;
+                -webkit-box-shadow: inset 0 0 10px #000000;
+                box-shadow:         inset 0 0 10px #000000;
+                h4 {
+                    margin-top: 0;
+                    padding: 1rem;
+                    text-align: center;
+                    font-weight: 100;
+                }
+                .text {
+                    padding: 20px;
+                    margin: 0;
+                }
+                font-family: 'typewr', 'Courier New', Courier, monospace;
+            }
+        }
+    }
+}
